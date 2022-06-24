@@ -1,100 +1,113 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sova</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+ body {
+    display: flex;
+    flex-flow: column wrap;
+    /* flex-direction: column; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
 
-    <body>
-        <div class="header">
-            <div class="lft-hdr">
-                <img src="images/Logo.png" alt="Logo" id="logo" width ="80" height="80">
-            </div>
+img {
+    border-radius: 10px;
+}
 
-            <div class="rght-hdr">
-                <ul>
-                <li><a href="https://earlygame.com/valorant/sova-agent-guide-abilities">Player Guide</a></li>
-                <li><a href="https://www.youtube.com/results?search_query=Best+sova+clips">Clips</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More</a></li>
-                </ul>
-            </div>
-        </div>
+.header {
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    /* height: 40px; */
+}
 
-        <div class = "info">
-            <div class = "dscr">
-                <h1>Sova</h1>
-                <p>Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide. Sova has a very calm and level-headed personality. Although he is incredibly dedicated and ruthless towards the enemies, he is warm towards his teammates, always encouraging and complimenting them. He believes in himself and he believes in his team to win. His steadiness and tirelessness on the field is most likely an asset to the morale of the team.</p>
-                <button id="lore_button" width="200" height="200"><a href="https://valorant-lore.fandom.com/wiki/Sova"><b>Check out the lore!</b></a></button>
-            </div>
-            <img src="images/SovaFullImage.png" alt="SovaFullImage" id="fullimg" width ="700" height="300">
-        </div>
+/* .rght-hdr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+} */
 
-        
-        
-            
-        <div class="abilities">
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
 
-            <div class="abs_title"><h2>Abilities</h2></div>
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-            <div class="abs_data">
-            <div id="abil"> 
-            <img src="images/drone.png" alt="drone" width ="80" height="80">
-            <p>
-                EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.
-            </p></div>       
+.info{
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    padding: 50px;
+}
 
-            <div id="abil">
-            <img src="images/dart.png" alt="dart" id="abilimg" width ="80" height="80">
-            <p>
-                EQUIP a bow with shock bolt. FIRE to send the explosive bolt forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.
-            </p></div>
+button {
+    background-color: red;
+    height: 40px;
+    border-radius: 15px;
+}
 
-            <div id="abil">
-            <img src="images/recon.png" alt="recon" id="abilimg" width ="80" height="80">
-            <p>
-                EQUIP a bow with recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.
-            </p></div>
+.abilities {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.abs_data{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
-            <div id="abil">
-            <img src="images/ult.png" alt="ult" id="abilimg" width ="80" height="80">
-            <p>
-                EQUIP a bow with three long-range, wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.
-            </p></div>
+.voicelines {
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 
-        </div></div>
+}
 
-        <div class = "voicelines">
-            <p>
-                "A bow and arrow is old fashioned. But sometimes old ways are best."<br>"There is no retreat. Not when annihilation is at stake. This is our day."<br>"We are strong because we are together. Don't forget that."<br>"My babushka told me not to brag. But for this I make an exception!"
-            </p>
-            <div class ="sign">-Sova</div>
-        </div>
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    color: white
+}
 
-        <div class="footer">
-            <div class="dsrc">
+.footer .dsrc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 30px; */
+    align-items: center;
+}
 
-                <p><b>"Let us hunt!" Start playing valorant, now</b></p>
-                <button><a href="https://playvalorant.com/en-us/">Lets go!</a></button>
-            </div>
-        </div>
+.creds {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1f2937;
+    color: white;
+}
 
-        <div class="creds">
-            <a href="https://github.com/SatArw"><u>-Satwik Arawalli</u></a>
-        </div>
 
-        
-        <!--[if lt IE 7]
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+
+
+
+
+
+
+
