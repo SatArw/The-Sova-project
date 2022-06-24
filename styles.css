@@ -46,6 +46,7 @@ a {
     background-color: #1f2937;
     color: white;
     justify-content: space-around;
+    align-items: center;
     gap: 16px;
     padding: 50px;
 }
